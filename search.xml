@@ -8,21 +8,21 @@
       <link href="/ce269dce74a9/"/>
       <url>/ce269dce74a9/</url>
       
-        <content type="html"><![CDATA[<p>Archlinux + Labwc WM (Wayland)</p><p>My dotfiles : <a href="https://github.com/ECAMT35/dotfiles.git">https://github.com/ECAMT35/dotfiles.git</a></p><h1 id="labwc"><a href="#labwc" class="headerlink" title="labwc"></a>labwc</h1><p>官方文档：<a href="https://labwc.github.io/integration.html">labwc</a></p><h2 id="桌面环境软件包"><a href="#桌面环境软件包" class="headerlink" title="桌面环境软件包"></a>桌面环境软件包</h2><p>字体:<br>noto-fonts<br>noto-fonts-cjk<br>ttf-nerd-fonts-symbols<br>ttf-nerd-fonts-symbols-common</p><p>屏幕管理:<br>锁屏: Swaylock + Swayidle<br>关闭屏幕: wlopm + Swayidle<br>屏幕分辨率: <a href="https://sr.ht/~emersion/wlr-randr/">wlr-randr</a><br>背光调节: brightnessctl<br>桌面壁纸: <a href="https://github.com/swaywm/swaybg">swaybg</a></p><p>命令解释器: Bash<br>终端模拟器: Foot<br>文本编辑器: Neovim</p><p>bar: waybar<br>网络: NetworkManager<br>输入法: Fcitx5<br>启动器: <a href="https://man.archlinux.org/man/wofi.1.en">wofi</a><br>剪切板: wofi + wl-clipboard + <a href="https://github.com/sentriz/cliphist">cliphist</a><br>截图: <a href="https://sr.ht/~emersion/grim/">grim</a> + slurp + swappy<br>终端文件管理: yazi<br>浏览器: Firefox<br>文件下载: Aria2c, <a href="https://github.com/P3TERX/aria2.conf">aria2c config</a><br><del>消息提醒: dunst</del><br>安卓模拟器: Waydroid</p><p>音视频媒体:<br>声音设置: Alsa + PipeWire + WirePlumber<br>图片查看器: Swayimg<br>视频播放器: MPV<br>视频录制: OBS</p><p>游戏: Wine, Steam, <del>KVM</del></p><p>画板、图片编辑： Krita</p><p>笔记本电源管理:TLP</p><hr><p>其他wayland应用查看<br><a href="https://arewewaylandyet.com/">https://arewewaylandyet.com/</a></p><h1 id="优化部分"><a href="#优化部分" class="headerlink" title="优化部分"></a>优化部分</h1><h2 id="ext4挂载选项"><a href="#ext4挂载选项" class="headerlink" title="ext4挂载选项"></a>ext4挂载选项</h2><ul><li>noatime</li><li>commit&#x3D;180</li><li>开启 fast_commit</li></ul><h2 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h2><ul><li>开启 Periodic TRIM</li></ul><h2 id="禁用看门狗"><a href="#禁用看门狗" class="headerlink" title="禁用看门狗"></a>禁用看门狗</h2><ul><li>禁用看门狗</li></ul><h2 id="视频硬件加速"><a href="#视频硬件加速" class="headerlink" title="视频硬件加速"></a>视频硬件加速</h2><p>相关驱动(部分已经合并到mesa)：<br><a href="https://wiki.archlinux.org/title/Hardware_video_acceleration">https://wiki.archlinux.org/title/Hardware_video_acceleration</a></p><p>firefox进<code>about:config</code>设置：<br><a href="https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration">https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration</a></p><ul><li>media.ffmpeg.vaapi.enabled&#x3D;true</li><li>media.hardware-video-decoding.force-enabled&#x3D;true</li></ul><h2 id="firefox"><a href="#firefox" class="headerlink" title="firefox"></a>firefox</h2><p>关闭磁盘缓存：</p><ul><li>browser.cache.disk.enable&#x3D;false</li><li>browser.cache.memory.enable&#x3D;true</li></ul><p>其他可选调整：<br><a href="https://wiki.archlinux.org/title/Firefox/Tweaks">https://wiki.archlinux.org/title/Firefox/Tweaks</a><br><a href="https://github.com/arkenfox/user.js/">https://github.com/arkenfox/user.js/</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Archlinux + Labwc WM (Wayland)</p><p>My dotfiles : <a href="https://github.com/ECAMT35/dotfiles.git">https://github.com/ECAMT35/dotfiles.git</a></p><h1 id="labwc"><a href="#labwc" class="headerlink" title="labwc"></a>labwc</h1><p>官方文档：<a href="https://labwc.github.io/integration.html">labwc</a></p><h2 id="桌面环境软件包"><a href="#桌面环境软件包" class="headerlink" title="桌面环境软件包"></a>桌面环境软件包</h2><p>字体:<br>noto-fonts<br>noto-fonts-cjk<br>ttf-nerd-fonts-symbols<br>ttf-nerd-fonts-symbols-common</p><p>屏幕管理:<br>锁屏: Swaylock + Swayidle<br>关闭屏幕: wlopm + Swayidle<br>屏幕分辨率: <a href="https://sr.ht/~emersion/wlr-randr/">wlr-randr</a><br>背光调节: brightnessctl<br>桌面壁纸: <a href="https://github.com/swaywm/swaybg">swaybg</a></p><p>命令解释器: Bash<br>终端模拟器: Foot<br>文本编辑器: Neovim</p><p>bar: waybar<br>网络: NetworkManager<br>输入法: Fcitx5<br>启动器: <a href="https://man.archlinux.org/man/wofi.1.en">wofi</a><br>剪切板: wofi + wl-clipboard + <a href="https://github.com/sentriz/cliphist">cliphist</a><br>截图: <a href="https://sr.ht/~emersion/grim/">grim</a> + slurp + swappy<br>终端文件管理: yazi<br>浏览器: Firefox<br>文件下载: Aria2c, <a href="https://github.com/P3TERX/aria2.conf">aria2c config</a><br><del>消息提醒: dunst</del><br>安卓模拟器: Waydroid</p><p>音视频媒体:<br>声音设置: Alsa + PipeWire + WirePlumber<br>图片查看器: Swayimg<br>视频播放器: MPV<br>视频录制: OBS</p><p>游戏: Wine, Steam, <del>KVM</del></p><p>文档编辑： LibreOffice<br>画板、图片编辑： Krita</p><p>笔记本电源管理:TLP</p><hr><p>其他wayland应用查看<br><a href="https://arewewaylandyet.com/">https://arewewaylandyet.com/</a></p><h1 id="优化部分"><a href="#优化部分" class="headerlink" title="优化部分"></a>优化部分</h1><h2 id="ext4挂载选项"><a href="#ext4挂载选项" class="headerlink" title="ext4挂载选项"></a>ext4挂载选项</h2><ul><li>noatime</li><li>commit&#x3D;180</li><li>开启 fast_commit</li></ul><h2 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h2><ul><li>开启 Periodic TRIM</li></ul><h2 id="禁用看门狗"><a href="#禁用看门狗" class="headerlink" title="禁用看门狗"></a>禁用看门狗</h2><ul><li>禁用看门狗</li></ul><h2 id="视频硬件加速"><a href="#视频硬件加速" class="headerlink" title="视频硬件加速"></a>视频硬件加速</h2><p>相关驱动(部分已经合并到mesa)：<br><a href="https://wiki.archlinux.org/title/Hardware_video_acceleration">https://wiki.archlinux.org/title/Hardware_video_acceleration</a></p><p>firefox进<code>about:config</code>设置：<br><a href="https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration">https://wiki.archlinux.org/title/Firefox#Hardware_video_acceleration</a></p><ul><li>media.ffmpeg.vaapi.enabled&#x3D;true</li><li>media.hardware-video-decoding.force-enabled&#x3D;true</li></ul><h2 id="firefox"><a href="#firefox" class="headerlink" title="firefox"></a>firefox</h2><p>关闭磁盘缓存：</p><ul><li>browser.cache.disk.enable&#x3D;false</li><li>browser.cache.memory.enable&#x3D;true</li></ul><p>其他可选调整：<br><a href="https://wiki.archlinux.org/title/Firefox/Tweaks">https://wiki.archlinux.org/title/Firefox/Tweaks</a><br><a href="https://github.com/arkenfox/user.js/">https://github.com/arkenfox/user.js/</a></p>]]></content>
       
       
       <categories>
           
-          <category> linux </category>
+          <category> GNU/Linux </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> archlinux </tag>
+            <tag> Archlinux </tag>
             
-            <tag> labwc </tag>
+            <tag> Labwc </tag>
             
         </tags>
       
@@ -53,14 +53,14 @@
       
       <categories>
           
-          <category> linux </category>
+          <category> GNU/Linux </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> archlinux </tag>
+            <tag> Archlinux </tag>
             
         </tags>
       
